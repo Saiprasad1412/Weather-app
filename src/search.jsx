@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react';
 export default function Search({ updateInfo }) {
   const [city, setCity] = useState("");
   const [error, setError] = useState("");
-  const API_URL = process.env.API_URL;
-  const API_KEY = process.env.API_KEY;
+  const API_URL = "https://api.openweathermap.org/data/2.5/weather";
+  const API_KEY = "5cf58b0535a959354ee10cb9a0f6eb03";
 
 const getWeather = async (cityName) => {
   try {
